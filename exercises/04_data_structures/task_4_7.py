@@ -24,9 +24,9 @@ oc12b = bin(oc12d)
 oc34b = bin(oc34d)
 oc56b = bin(oc56d)
 
-oc12bf = oc12b[3:]
-oc34bf = oc34b[3:]
-oc56bf = oc56b[3:]
+oc12bf = oc12b[2:]
+oc34bf = oc34b[2:]
+oc56bf = oc56b[2:]
 
 result = oc12bf + oc34bf + oc56bf
 print(result)
