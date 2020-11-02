@@ -10,3 +10,23 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac_list = mac.split(':')
+
+oc12h = mac_list[0]
+oc34h = mac_list[1]
+oc56h = mac_list[2]
+
+oc12d = int(oc12h,16)
+oc34d = int(oc34h,16)
+oc56d = int(oc56h,16)
+
+oc12b = bin(oc12d)
+oc34b = bin(oc34d)
+oc56b = bin(oc56d)
+
+oc12bf = oc12b[3:]
+oc34bf = oc34b[3:]
+oc56bf = oc56b[3:]
+
+result = oc12bf + oc34bf + oc56bf
+print(result)
