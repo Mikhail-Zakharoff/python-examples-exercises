@@ -20,3 +20,19 @@
 """
 
 ip = "192.168.3.1"
+
+ip_adr_spl = ip.split('.')
+
+oc1 = ip_adr_spl[0]
+oc2 = ip_adr_spl[1]
+oc3 = ip_adr_spl[2]
+oc4 = ip_adr_spl[3]
+
+oc1d = int(oc1,10)
+oc2d = int(oc2,10)
+oc3d = int(oc3,10)
+oc4d = int(oc4,10)
+sp = ' '
+
+print("{:<10} {:<10} {:<10} {:<10}".format(oc1, oc2, oc3, oc4))
+print("{:08b} {} {:08b} {} {:08b} {} {:08b}".format(oc1d, sp, oc2d, sp, oc3d, sp, oc4d))
