@@ -24,3 +24,15 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 
 """
+f = open('CAM_table.txt')
+list2 = [] #пустой список для формирования списка списков
+for line in f:
+    if line.find('.') is 12: #если в 12 позиции строки найдена '.'
+        line1 = line.strip()
+        list = line.split()
+        list0 = list.pop(-2) #удаляем третий элемент в строке
+        list[0] = int(list[0])
+        list2.append(list) #добавляем элементы в список списков
+        list2 = sorted(list2)
+for line2 in list2:
+    print ('{:<6} {:<16} {:<25}'.format(line2[0], line2[1], line2[2]))
