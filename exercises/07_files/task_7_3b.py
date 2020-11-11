@@ -11,3 +11,13 @@
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 
 """
+vlan_num = input('Введите номер VLAN: ')
+
+f = open('CAM_table.txt')
+
+for line in f:
+    if line.find('.') is 12: #если в 12 позиции строки найдена '.'
+            line1 = line.strip()
+            list = line.split()
+            if list[0] == vlan_num:
+                print ('{:<6} {:<16} {:<25}'.format(list[0], list[1], list[3]))
