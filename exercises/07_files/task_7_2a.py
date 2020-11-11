@@ -12,7 +12,7 @@
 
 """
 
-ignore = [" duplex", "alias", "Current configuration"]
+ignore = ["duplex", "alias", "Current configuration"]
 
 from sys import argv
 

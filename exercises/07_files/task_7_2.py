@@ -40,3 +40,13 @@ interface Ethernet0/3
 ...
 
 """
+from sys import argv
+
+file_name = argv[1]
+
+f = open(file_name)
+
+for line in f:
+        if line.find('!') is -1: #если в строке не найдено '!'
+            print(line.strip())
+ 
